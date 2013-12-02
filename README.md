@@ -24,19 +24,19 @@ let g:vimix_map_keys = 1
 
 Here are the key mappings for your reference:
 
-| Key Map     | Vim Command          | Mix Command
-| ----------- | -------------------- | -----------
-| <Leader>mT  | VimixTestAll         | test
-| <Leader>mt  | VimixTestCurrentFile | test <test file>
-| <Leader>mc  | VimixCompile         | compile
-| <Leader>mC  | VimixClean           | clean
-| <Leader>mdc | VimixDepsCompile     | deps.compile
-| <Leader>mdg | VimixDepsGet         | deps.get
-| <Leader>mds | VimixDepsStatus      | deps
-| <Leader>mdU | VimixDepsUpdate      | deps.update
-| <Leader>mL  | VimixLocal           | local
-| <Leader>mr  | VimixPromptRun       | <prompt for mix command>
-| <Leader>mm  | VimuxRunLastCommand  | Run last command again
+| Key Map       | Vim Command          | Mix Command
+| ------------- | -------------------- | -----------
+| \<Leader\>mT  | VimixTestAll         | test
+| \<Leader\>mt  | VimixTestCurrentFile | test \<test file\>
+| \<Leader\>mc  | VimixCompile         | compile
+| \<Leader\>mC  | VimixClean           | clean
+| \<Leader\>mdc | VimixDepsCompile     | deps.compile
+| \<Leader\>mdg | VimixDepsGet         | deps.get
+| \<Leader\>mds | VimixDepsStatus      | deps
+| \<Leader\>mdU | VimixDepsUpdate      | deps.update
+| \<Leader\>mL  | VimixLocal           | local
+| \<Leader\>mr  | VimixPromptRun       | \<prompt for mix command\>
+| \<Leader\>mm  | VimuxRunLastCommand  | Run last command again
 
 ## Requirements
 
