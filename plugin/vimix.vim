@@ -80,8 +80,8 @@ function VimixLocal()
   call s:VimixRunCommand("local")
 endfunction
 
-function VimixPromptRun()
-  let l:command = input(_VimuxOption("g:VimixPromptString", "Command? "))
+function VimixPromptCommand()
+  let l:command = input(_VimuxOption("g:VimixPromptString", "Mix Command? "))
   call s:VimixRunCommand(l:command)
 endfunction
 
