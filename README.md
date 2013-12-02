@@ -27,7 +27,7 @@ Here are the key mappings for your reference:
 | Key Map       | Vim Command          | Mix Command
 | ------------- | -------------------- | -----------
 | \<Leader\>mT  | VimixTestAll         | test
-| \<Leader\>mt  | VimixTestCurrentFile | test <test file>
+| \<Leader\>mt  | VimixTestCurrentFile | test \<test file\>
 | \<Leader\>mc  | VimixCompile         | compile
 | \<Leader\>mC  | VimixClean           | clean
 | \<Leader\>mdc | VimixDepsCompile     | deps.compile
@@ -35,7 +35,7 @@ Here are the key mappings for your reference:
 | \<Leader\>mds | VimixDepsStatus      | deps
 | \<Leader\>mdU | VimixDepsUpdate      | deps.update
 | \<Leader\>mL  | VimixLocal           | local
-| \<Leader\>mr  | VimixPromptRun       | <prompt for mix command>
+| \<Leader\>mr  | VimixPromptRun       | \<prompt for mix command\>
 | \<Leader\>mm  | VimuxRunLastCommand  | Run last command again
 
 ## Requirements
