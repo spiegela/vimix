@@ -14,7 +14,7 @@ function! s:VimixFindMixRoot(dir)
       return 0
       call s:error("mix.exs file not found in project")
     else
-      let dir = simplify(dir.'/..')
+      let dir = simplify(resolve(dir).'/..')
     endif
   endwhile
   return dir
