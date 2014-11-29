@@ -44,7 +44,7 @@ endfunction
 function VimixTestCurrentFile()
   let test_file = s:TestFor(expand('%:p'))
   echo test_file
-  call s:VimixRunCommand("test ".test_file)
+  call s:VimixRunCommand("test ".shellescape(test_file, 1))
 endfunction
 
 function VimixClean()
@@ -101,7 +101,7 @@ endfunction
 function s:VimixRunCommand(command)
   "Make sure that we're in the mix root
   if !exists('g:vimix_in_mix_root')
-    call VimuxRunCommand("cd ". g:vimix_mix_root)
+    call VimuxRunCommand("cd ". shellescape(g:vimix_mix_root, 1))
     let g:vimix_in_mix_root = 1
   endif
   call VimuxRunCommand("mix " . a:command)
