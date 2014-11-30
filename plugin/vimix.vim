@@ -34,7 +34,8 @@ if g:vimix_map_keys
   nnoremap <Leader>mds :call VimixDepsStatus()<CR>
   nnoremap <Leader>mdU :call VimixDepsUpdate()<CR>
   nnoremap <Leader>mL :call VimixLocal()<CR>
-  nnoremap <Leader>mr :call VimixlocalCommand()<CR>
+  nnoremap <Leader>mr :call VimixPromptCommand()<CR>
+  nnoremap <Leader>mm :call VimuxRunLastCommand()<CR>
 endif
 
 function VimixTestAll()
