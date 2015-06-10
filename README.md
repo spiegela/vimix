@@ -28,6 +28,7 @@ Here are the key mappings for your reference:
 | ------------- | -------------------- | -----------
 | \<Leader\>mT  | VimixTestAll         | test
 | \<Leader\>mt  | VimixTestCurrentFile | test \<test file\>
+| \<Leader\>ml  | VimixTestCurrentLine | test \<test file\>:\<test line\>
 | \<Leader\>mc  | VimixCompile         | compile
 | \<Leader\>mC  | VimixClean           | clean
 | \<Leader\>mdc | VimixDepsCompile     | deps.compile
