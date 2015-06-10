@@ -27,6 +27,7 @@ endif
 if g:vimix_map_keys
   nnoremap <Leader>mT :call VimixTestAll()<CR>
   nnoremap <Leader>mt :call VimixTestCurrentFile()<CR>
+  nnoremap <Leader>ml :call VimixTestCurrentLine()<CR>
   nnoremap <Leader>mc :call VimixCompile()<CR>
   nnoremap <Leader>mC :call VimixClean()<CR>
   nnoremap <Leader>mdc :call VimixDepsCompile()<CR>
@@ -46,6 +47,12 @@ function VimixTestCurrentFile()
   let test_file = s:TestFor(expand('%:p'))
   echo test_file
   call s:VimixRunCommand("test ".shellescape(test_file, 1))
+endfunction
+
+function VimixTestCurrentLine()
+  let test_file_with_line = s:TestWithLineFor(expand('%:p'))
+  echo test_file_with_line
+  call s:VimixRunCommand("test ".shellescape(test_file_with_line, 1))
 endfunction
 
 function VimixClean()
@@ -96,6 +103,15 @@ function s:TestFor(file)
     return l:file
   else
     call s:error("can't find a test for ".a:file)
+  endif
+endfunction
+
+function s:TestWithLineFor(file)
+  let l:test_file = s:TestFor(a:file)
+  if a:file =~# '_test.exs$'
+    return l:test_file . ":" . line(".")
+  else
+    call s:error("can't determine matching line for ".l:test_file)
   endif
 endfunction
 
