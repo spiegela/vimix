@@ -15,6 +15,15 @@ session.  Key mappings are disabled by default, but can easily be enabled by set
 let g:vimix_map_keys = 1
 ```
 
+If you'd like run your tests in the context of [IEx](http://elixir-lang.org/docs/stable/iex/IEx.html) or change the way tests are run in other ways, you can customize the mix command like so:
+
+```vim
+let g:vimix_mix_command = "iex -S mix"
+```
+
+The default is just `mix`.
+
+
 ## Features
 
 * Changes Vimux runner directory to your mix project root (looks for the mix.exs file)

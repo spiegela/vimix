@@ -7,6 +7,10 @@ if !exists('g:vimix_map_keys')
   let g:vimix_map_keys = 0
 endif
 
+if !exists('g:vimix_mix_command')
+  let g:vimix_mix_command = "mix"
+endif
+
 function! s:VimixFindMixRoot(dir)
   let dir = a:dir
   while ! filereadable(dir.'/mix.exs')
@@ -121,7 +125,7 @@ function s:VimixRunCommand(command)
     call VimuxRunCommand("cd ". shellescape(g:vimix_mix_root, 1))
     let g:vimix_in_mix_root = 1
   endif
-  call VimuxRunCommand("mix " . a:command)
+  call VimuxRunCommand(g:vimix_mix_command . " " . a:command)
 endfunction
 
 function! s:error(str)
