@@ -92,7 +92,7 @@ function VimixLocal()
 endfunction
 
 function VimixPromptCommand()
-  let l:command = input(_VimuxOption("g:VimixPromptString", "Mix Command? "))
+  let l:command = input('Mix Command? ')
   call s:VimixRunCommand(l:command)
 endfunction
 
