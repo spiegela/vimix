@@ -1,6 +1,6 @@
 # Vimix
 
-[vimux](https://github.com/benmills/vimux) with [Elixir mix](https://github.com/elixir-lang/elixir) integration
+[vimux](https://github.com/preservim/vimux) with [Elixir mix](https://github.com/elixir-lang/elixir) integration
 
 ## Installation
 
@@ -50,7 +50,7 @@ Here are the key mappings for your reference:
 
 ## Requirements
 
-* [vimux](https://github.com/benmills/vimux)
+* [vimux](https://github.com/preservim/vimux)
 * [Elixir Language](https://github.com/elixir-lang/elixir)
 
 ## Contributing
